@@ -1,0 +1,14 @@
+*.[ao]
+*.log
+*.~
+#仅仅忽略根目录下的TODO文件，不包括subdir目录
+/TODO
+
+#忽略build目录下的所有文件
+build/
+
+#lib.a文件除外，不忽略
+!lib.a
+
+#会忽略doc/note.txt 但是不会忽略doc/server/abc.txt
+doc/*.txt
